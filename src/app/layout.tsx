@@ -7,6 +7,16 @@ const jetBrainsMono = localFont({
   variable: "--font-jet-brains-mono",
   weight: "100 900",
 });
+const notoSans = localFont({
+  src: "./fonts/NotoSans-VariableFont_wdth,wght.ttf",
+  variable: "--font-noto-sans",
+  weight: "100 900",
+})
+const notoSansJP = localFont({
+  src: "./fonts/NotoSansJP-VariableFont_wght.ttf",
+  variable: "--font-noto-sans-jp",
+  weight: "100 900",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetBrainsMono.variable}`}>
+      <body className={`${jetBrainsMono.variable}  ${notoSans.variable}  ${notoSansJP.variable}`}>
         {children}
       </body>
     </html>
