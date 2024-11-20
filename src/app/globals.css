@@ -1,12 +1,18 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #EFF0EF;
+  --foreground: #3D664A;
+
+  --font-color: #555555;
+  --font-color-reverse: #EFF0EF;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #3D664A;
+    --foreground: #EFF0EF;
+
+    --font-color: #EFF0EF;
+    --font-color-reverse: #555555;
   }
 }
 
@@ -19,7 +25,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: --font-jet-brains-mono;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
