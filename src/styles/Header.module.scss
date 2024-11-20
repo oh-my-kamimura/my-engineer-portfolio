@@ -3,10 +3,13 @@ $header-height: 70px;
 .header {
   background-color: var(--foreground);
   color: var(--font-color-reverse);
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: $header-height;
   width: 100%;
   font-weight: 700;
+  z-index: 20;
   .logo {
     position: absolute;
     left: 30px;
