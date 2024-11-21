@@ -6,6 +6,7 @@
   --font-color-reverse: #EFF0EF;
 }
 
+/* TODO: ダークモードの有効化
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #3D664A;
@@ -14,7 +15,7 @@
     --font-color: #EFF0EF;
     --font-color-reverse: #555555;
   }
-}
+} */
 
 html,
 body {
@@ -42,8 +43,9 @@ a {
   text-decoration: none;
 }
 
+/* TODO: ダークモードの有効化
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
+} */
