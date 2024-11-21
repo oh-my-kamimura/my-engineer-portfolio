@@ -2,7 +2,7 @@ import styles from "../../styles/AboutSite.module.scss"
 
 export default function AboutSite () {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id="about-site">
 			<div className={styles.sectionTitle}>
 				About this site
 			</div>

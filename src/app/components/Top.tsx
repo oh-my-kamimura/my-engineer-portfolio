@@ -4,7 +4,7 @@ import ScrollAnimation from './ScrollAnimation';
 
 export default function Top() {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id="top">
 			<div className={styles.titleName}>
 				YOHEI KAMIMURA
 			</div>

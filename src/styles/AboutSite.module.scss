@@ -1,9 +1,12 @@
 .container {
   height: auto;
-  margin: 500px auto;
+  margin: 350px auto;
+  // TODO: paddingでなぜか一括指定できない。
+  padding-top: 150px;
+  padding-bottom: 200px;
   .sectionTitle {
 	margin: 100px auto;
-	width: 320px;
+	width: 340px;
     text-align: center;
 	padding: 10px;
 	font-size: 32px;

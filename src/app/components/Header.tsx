@@ -3,25 +3,25 @@ import styles from "../../styles/Header.module.scss"
 export default function Header() {
 	return (
 		<div className={styles.header}>
-			<div className={styles.logo}>
+			<a className={styles.logo} href="#top">
 				YOHEI KAMIMURA
-			</div>
+			</a>
 			<div className={styles.menuContainer}>
-				<div className={styles.menuElement}>
+				<a className={styles.menuElement} href="#about-site">
 					About this site
-				</div>
+				</a>
 				<span className={styles.divide}>|</span>
-				<div className={styles.menuElement}>
+				<a className={styles.menuElement} href="#work">
 					Work
-				</div>
+				</a>
 				<span className={styles.divide}>|</span>
-				<div className={styles.menuElement}>
+				<a className={styles.menuElement} href="#skills">
 					Skills
-				</div>
+				</a>
 				<span className={styles.divide}>|</span>
-				<div className={styles.menuElement}>
+				<a className={styles.menuElement} href="#contact">
 					Contact
-				</div>
+				</a>
 			</div>
 		</div>
 	)

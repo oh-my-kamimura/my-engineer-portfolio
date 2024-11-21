@@ -2,7 +2,7 @@ import styles from "../../styles/Work.module.scss"
 
 export default function Work() {
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} id="work">
 			<div className={styles.sectionTitle}>
 				Work
 			</div>
