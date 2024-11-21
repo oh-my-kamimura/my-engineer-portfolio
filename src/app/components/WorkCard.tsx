@@ -17,6 +17,9 @@ export default function WorkCard(props: { imageSrc: string, title: string, platf
 		Firebase: ["#FFCA28", "black"],
 		ReactNative: ["#20232A", "#61DAFB"],
 		MySQL: ["#00758F", "white"],
+		"Next.js": ["#444444", "white"],
+		"C#": ["#68217A", "white"],
+		"Unity": ["#444444", "white"],
 	};
 
 	return (
