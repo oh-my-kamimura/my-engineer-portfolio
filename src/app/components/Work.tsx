@@ -19,6 +19,7 @@ export default function Work() {
 					platform="Webアプリケーション"
 					usedService={["Typescript", "Angular", "HTML/CSS", "Java", "Spring", "MySQL","AWS", "Figma"]}
 					description="タイピングゲームを楽しみながら、¥n資格試験の勉強を行うことができる¥n Webアプリケーションを開発しました。¥n 現在は２つのモードを実装しています。"
+					githubUrl="https://github.com/oh-my-kamimura/learn-by-typing/tree/master"
 				/>
 				<WorkCard
 					imageSrc="schedule-matching-app.png"
@@ -26,6 +27,7 @@ export default function Work() {
 					platform="モバイルアプリ（iPhone × android）【開発中】"
 					usedService={["Typescript", "ReactNative", "Firebase", "Figma"]}
 					description="友人との日程調整をストレスフリーにする¥nモバイルアプリを開発しました。¥n友人同士の遊びの掲示板や、カレンダーに¥n基づいた回答機能などを備えています。"
+					githubUrl="https://github.com/oh-my-kamimura/schedule-matching-app"
 				/>
 				<WorkCard
 					imageSrc="induction-course-quiz.png"
