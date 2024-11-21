@@ -1,7 +1,8 @@
 import styles from "../../styles/WorkCard.module.scss"
 import Image from "next/image"
+import React from "react";
 
-export default function WorkCard(props: { imageSrc: string, title: string, platform: string, usedService: string[] }) {
+export default function WorkCard(props: { imageSrc: string, title: string, platform: string, usedService: string[], description: string }) {
 	type ColorMap = { [key: string]: [backgroundColor: string, fontColor: string]; };
 
 	const serviceColorMap: ColorMap = {
@@ -51,6 +52,14 @@ export default function WorkCard(props: { imageSrc: string, title: string, platf
 							</div>
 						)
 					})}
+				</div>
+				<div className={styles.description} style={{whiteSpace: "pre-line"}}>
+				{props.description.split("¥n").map((line, index) => (
+					<React.Fragment key={index}>
+					{line}
+					<br />
+					</React.Fragment>
+				))}
 				</div>
 			</div>
 		</div>
