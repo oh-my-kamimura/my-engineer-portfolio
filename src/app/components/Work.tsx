@@ -14,19 +14,22 @@ export default function Work() {
 			</div>
 			<div className={styles.cardContainer}>
 				<WorkCard
-					imageSrc = "learn-by-typing.png"
-					title = "資格勉強×タイピング"
-					platform = "Webアプリケーション"
-					/>
-				<WorkCard
-					imageSrc = "schedule-matching-app.png"
-					title = "日程調整アプリ「ラク調」"
-					platform = "モバイルアプリ（iPhone × android）"
+					imageSrc="learn-by-typing.png"
+					title="資格勉強×タイピング"
+					platform="Webアプリケーション"
+					usedService={["Typescript", "Angular", "HTML/CSS", "Java", "Spring", "MySQL","AWS", "Figma"]}
 				/>
 				<WorkCard
-					imageSrc = "induction-course-quiz.png"
-					title = "研修生向けクイズサイト"
-					platform = "Webアプリケーション"
+					imageSrc="schedule-matching-app.png"
+					title="日程調整アプリ「ラク調」"
+					platform="モバイルアプリ（iPhone × android）【開発中】"
+					usedService={["Typescript", "ReactNative", "Firebase", "Figma"]}
+				/>
+				<WorkCard
+					imageSrc="induction-course-quiz.png"
+					title="研修生向けクイズサイト"
+					platform="Webアプリケーション"
+					usedService={["HTML/CSS", "Java", "Spring", "MySQL", "Figma"]}
 				/>
 			</div>
 		</div>

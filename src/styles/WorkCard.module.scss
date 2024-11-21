@@ -21,7 +21,7 @@ $card-height: 520px;
 			position: relative !important;
 		}
 	}
-	.titleFrame {
+	.overviewContainer {
 		position: absolute;
 		top: 218px;
 		left: 28px;
@@ -35,6 +35,21 @@ $card-height: 520px;
 			margin-top: 8px;
 			font-size: 13px;
 			font-weight: 300;
+		}
+		.serviceFrame {
+			margin: 10px 0;
+			width: 95%;
+			.serviceElement {
+				display: inline-block;
+				height: 24px;
+				line-height: 12px;
+				padding: 6px 13px;
+				margin: 4px 8px 4px 0;
+				border-radius: 12px;
+				background-color: gray;
+				font-size: 12px;
+				color: var(--font-color-reverse);
+			}
 		}
 	}
 }

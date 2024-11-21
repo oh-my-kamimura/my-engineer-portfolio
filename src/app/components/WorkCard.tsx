@@ -1,7 +1,23 @@
 import styles from "../../styles/WorkCard.module.scss"
 import Image from "next/image"
 
-export default function WorkCard(props: { imageSrc: string, title: string, platform: string }) {
+export default function WorkCard(props: { imageSrc: string, title: string, platform: string, usedService: string[] }) {
+	type ColorMap = { [key: string]: [backgroundColor: string, fontColor: string]; };
+
+	const serviceColorMap: ColorMap = {
+		"HTML/CSS": ["#E44D26", "white"],
+		Typescript: ["#007ACC", "white"],
+		Angular: ["#DD1B16", "white"],
+		Java: ["#5382A1", "white"],
+		Spring: ["#6DB33F", "white"],
+		AWS: ["#FF9900", "black"],
+		Figma: ["#F24E1E", "white"],
+		Javascript: ["#F7DF1E", "black"],
+		Firebase: ["#FFCA28", "black"],
+		ReactNative: ["#20232A", "#61DAFB"],
+		MySQL: ["#00758F", "white"],
+	};
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.cardImageFrame}>
@@ -12,12 +28,29 @@ export default function WorkCard(props: { imageSrc: string, title: string, platf
 					fill
 				/>
 			</div>
-			<div className={styles.titleFrame}>
+			<div className={styles.overviewContainer}>
 				<div className={styles.title}>
 					{props.title}
 				</div>
 				<div className={styles.platform}>
 					{props.platform}
+				</div>
+				<div className={styles.serviceFrame}>
+					{props.usedService.map((service, index) => {
+						const [backgroundColor, fontColor] = serviceColorMap[service];
+						return (
+							<div
+								key={index}
+								className={styles.serviceElement}
+								style={{
+									backgroundColor: backgroundColor,
+									color: fontColor,
+								}}
+							>
+								{service}
+							</div>
+						)
+					})}
 				</div>
 			</div>
 		</div>
