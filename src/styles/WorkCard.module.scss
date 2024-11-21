@@ -6,7 +6,7 @@ $card-height: 520px;
 	position: relative;
 	width: $card-width;
 	height: $card-height;
-	border: var(--forefround) 1px solid;
+	border: var(--foreground) 1px solid;
 	border-radius: 10px;
 	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 	.cardImageFrame{
@@ -19,6 +19,22 @@ $card-height: 520px;
 		.cardImage {
 			width: 100% !important;
 			position: relative !important;
+		}
+	}
+	.titleFrame {
+		position: absolute;
+		top: 218px;
+		left: 28px;
+		color: var(--foreground);
+		font-family: var(--font-noto-sans-jp);
+		.title{
+			font-size: 22px;
+			font-weight: 700;
+		}
+		.platform {
+			margin-top: 8px;
+			font-size: 13px;
+			font-weight: 300;
 		}
 	}
 }

@@ -15,12 +15,18 @@ export default function Work() {
 			<div className={styles.cardContainer}>
 				<WorkCard
 					imageSrc = "learn-by-typing.png"
-				/>
+					title = "資格勉強×タイピング"
+					platform = "Webアプリケーション"
+					/>
 				<WorkCard
 					imageSrc = "schedule-matching-app.png"
+					title = "日程調整アプリ「ラク調」"
+					platform = "モバイルアプリ（iPhone × android）"
 				/>
 				<WorkCard
 					imageSrc = "induction-course-quiz.png"
+					title = "研修生向けクイズサイト"
+					platform = "Webアプリケーション"
 				/>
 			</div>
 		</div>
