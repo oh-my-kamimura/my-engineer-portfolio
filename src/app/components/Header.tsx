@@ -15,10 +15,10 @@ export default function Header() {
 					Work
 				</a>
 				<span className={styles.divide}>|</span>
-				<a className={styles.menuElement} href="#skills">
+				{/* <a className={styles.menuElement} href="#skills">
 					Skills
 				</a>
-				<span className={styles.divide}>|</span>
+				<span className={styles.divide}>|</span> */}
 				<a className={styles.menuElement} href="#contact">
 					Contact
 				</a>
