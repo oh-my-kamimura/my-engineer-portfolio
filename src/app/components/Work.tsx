@@ -4,9 +4,9 @@ import WorkCard from "./WorkCard"
 export default function Work() {
 	return (
 		<div className={styles.container} id="work">
-			<div className={styles.sectionTitle}>
+			<h3>
 				Work
-			</div>
+			</h3>
 			<div className={styles.message}>
 				制作物一覧です。<br />
 				各制作物をクリックすると、詳細をご確認いただけます。<br />

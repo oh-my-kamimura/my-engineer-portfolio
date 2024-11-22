@@ -1,17 +1,10 @@
 .container {
   background-color: white;
-  height: 2000px;
+  height: auto;
+  text-align: center;
   margin-top: 150px;
   padding-top: 150px;
-  .sectionTitle {
-    margin: 50px auto;
-    width: 140px;
-    text-align: center;
-    padding: 10px;
-    font-size: 32px;
-    font-weight: 600;
-    background: linear-gradient(transparent 60%, rgba(61, 102, 74, 0.1) 60%);
-  }
+  padding-bottom: 350px;
   .message {
     margin-bottom: 130px;
     text-align: center;

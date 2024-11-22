@@ -6,12 +6,13 @@ $card-height: 540px;
 	position: relative;
 	width: $card-width;
 	height: $card-height;
+	text-align: left;
 	border: var(--foreground) 1px solid;
 	border-radius: 10px;
 	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 	transition: 0.3s cubic-bezier(0.5, 1, 0.89, 1);
 	&:hover {
-	transform: scale(1.03);
+		transform: scale(1.03);
 	}
 	.cardImageFrame{
 		position: absolute;
