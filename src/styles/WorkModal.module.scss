@@ -10,11 +10,99 @@
     align-items: center;
     z-index: 1000;
 	.modalContent {
+		position: relative;
 		background-color: white;
-		width: 85%;
-		height: 85%;
-		padding: 20px;
+		width: 90%;
+		height: 90%;
 		border-radius: 8px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		font-family: var(--font-noto-sans-jp);
+		.leftContainer {
+			position: absolute;
+			left: 0;
+			top: 5%;
+			display: inline-block;
+			width: 40%;
+			height: 90%;
+			text-align: left;
+			padding: 40px 50px;
+			border-top: 2px solid var(--foreground);
+			border-right: 2px solid var(--foreground);
+			border-bottom: 2px solid var(--foreground);
+			.platform {
+				display: inline-block;
+				padding: 0 20px;
+				height: 45px;
+				line-height: 45px;
+				text-align: center;
+				font-size: 19px;
+				font-weight: 700;
+				background-color: var(--foreground);
+				color: var(--font-color-reverse);
+				margin-bottom: 20px;
+			}
+			.title {
+				margin: 2px 0 7px;
+				padding: 0;
+			}
+			.divideLine {
+				width: 100%;
+				margin: 15px 0;
+				border-top: 1px solid var(--foreground);
+				opacity: 0.4;
+			}
+			td {
+				padding: 2px;
+			}
+			.firstColumn {
+				padding-right: 30px;
+				color: var(--foreground);
+				opacity: 0.5;
+				font-family: var(--font-jet-brains-mono);
+			}
+			.secondColumn {
+				color: var(--foreground);
+			}
+			.description {
+				margin-top: 20px;
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 25px;
+				opacity: 0.8;
+			}
+			.serviceElement {
+				display: inline-block;
+				height: 30px;
+				line-height: 20px;
+				padding: 5px 12px;
+				margin: 3.5px 7px 3.5px 0;
+				border-radius: 30px;
+				background-color: gray;
+				font-size: 13px;
+				color: var(--font-color-reverse);
+			}
+			.github {
+				display: inline-block;
+				margin-top: 5px;
+				font-size: 31px;
+			}
+		}
+	}
+	.closeButton {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		// border-radius: 50%;
+		background-color: transparent;
+		color: var(--accent-color);
+		font-size: 35px;
+		font-weight: 700;
+		cursor: pointer;
 	}
 }
