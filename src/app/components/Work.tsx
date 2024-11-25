@@ -14,51 +14,69 @@ export default function Work() {
 			</div>
 			<div className={styles.cardContainer}>
 				<WorkCard
-					imageSrc="learn-by-typing.png"
-					title="資格勉強×タイピング"
-					platform="Webアプリケーション"
-					usedService={["Typescript", "Angular", "HTML/CSS", "Java", "Spring", "MySQL", "AWS", "Figma"]}
-					description="タイピングゲームを楽しみながら、¥n資格試験の勉強を行うことができる¥n Webアプリケーションを開発しました。¥n 現在は２つのモードを実装しています。"
-					githubUrl="https://github.com/oh-my-kamimura/learn-by-typing/tree/master"
+					work={{
+						id: "learn-by-typing",
+						imageSrc: "learn-by-typing.png",
+						title: "資格勉強×タイピング",
+						platform: "Webアプリケーション",
+						usedService: ["Typescript", "Angular", "HTML/CSS", "Java", "Spring", "MySQL", "AWS", "Figma"],
+						description: "タイピングゲームを楽しみながら、¥n資格試験の勉強を行うことができる¥n Webアプリケーションを開発しました。¥n 現在は２つのモードを実装しています。",
+						githubUrl: "https://github.com/oh-my-kamimura/learn-by-typing/tree/master"
+					}}
 				/>
 				<WorkCard
-					imageSrc="induction-course-quiz.png"
-					title="研修生向けクイズサイト"
-					platform="Webアプリケーション"
-					usedService={["HTML/CSS", "Java", "Spring", "MySQL", "Figma"]}
-					description="新入社員研修中に開発したアプリケーションです。研修で学んだ内容をクイズ形式で振り返り、知識定着を促進するアプリケーションを開発し、社内で公開しました。"
+					work={{
+						id: "induction-course-quiz",
+						imageSrc: "induction-course-quiz.png",
+						title: "研修生向けクイズサイト",
+						platform: "Webアプリケーション",
+						usedService: ["HTML/CSS", "Java", "Spring", "MySQL", "Figma"],
+						description: "新入社員研修中に開発したアプリケーションです。研修で学んだ内容をクイズ形式で振り返り、知識定着を促進するアプリケーションを開発し、社内で公開しました。"
+					}}
 				/>
 				<WorkCard
-					imageSrc="schedule-matching-app.png"
-					title="日程調整アプリ「ラク調」"
-					platform="モバイルアプリ（iPhone × android）【開発中】"
-					usedService={["Typescript", "ReactNative", "Firebase", "Figma"]}
-					description="友人との日程調整をストレスフリーにする¥nモバイルアプリを開発しました。¥n友人同士の遊びの掲示板や、カレンダーに¥n基づいた回答機能などを備えています。"
-					githubUrl="https://github.com/oh-my-kamimura/schedule-matching-app"
+					work={{
+						id: "schedule-matching-app",
+						imageSrc: "schedule-matching-app.png",
+						title: "日程調整アプリ「ラク調」",
+						platform: "モバイルアプリ（iPhone × android）【開発中】",
+						usedService: ["Typescript", "ReactNative", "Firebase", "Figma"],
+						description: "友人との日程調整をストレスフリーにする¥nモバイルアプリを開発しました。¥n友人同士の遊びの掲示板や、カレンダーに¥n基づいた回答機能などを備えています。",
+						githubUrl: "https://github.com/oh-my-kamimura/schedule-matching-app"
+					}}
 				/>
 			</div>
 			<div className={styles.cardContainer}>
 				<WorkCard
-					imageSrc="my-engineer-portfolio.png"
-					title="ポートフォリオサイト"
-					platform="Webサイト"
-					usedService={["Typescript", "Next.js", "HTML/CSS", "Figma"]}
-					description="本サイトです。¥n自身の成果物をまとめました。"
-					githubUrl="https://github.com/oh-my-kamimura/my-engineer-portfolio"
+					work={{
+						id: "my-engineer-portfolio",
+						imageSrc: "my-engineer-portfolio.png",
+						title: "ポートフォリオサイト",
+						platform: "Webサイト",
+						usedService: ["Typescript", "Next.js", "HTML/CSS", "Figma"],
+						description: "本サイトです。¥n自身の成果物をまとめました。",
+						githubUrl: "https://github.com/oh-my-kamimura/my-engineer-portfolio"
+					}}
 				/>
 				<WorkCard
-					imageSrc="baseball-game.png"
-					title="野球版ゲーム"
-					platform="Unityアプリケーション"
-					usedService={["C#", "Unity"]}
-					description="Unityを使用して野球版ゲームを作成しました。¥nプログラムを用いて野球のルールを実装しました。"
+					work={{
+						id: "baseball-game",
+						imageSrc: "baseball-game.png",
+						title: "野球版ゲーム",
+						platform: "Unityアプリケーション",
+						usedService: ["C#", "Unity"],
+						description: "Unityを使用して野球版ゲームを作成しました。¥nプログラムを用いて野球のルールを実装しました。"
+					}}
 				/>
 				<WorkCard
-					imageSrc="shooting-game.png"
-					title="シューティングゲーム"
-					platform="Webサイト"
-					usedService={["HTML/CSS", "Javascript"]}
-					description="人生で初めて開発したWebサイトです。¥nプログラミングを好きになったきっかけでもあります。¥nシンプルなスクロール型シューティングゲームです。"
+					work={{
+						id: "shooting-game",
+						imageSrc: "shooting-game.png",
+						title: "シューティングゲーム",
+						platform: "Webサイト",
+						usedService: ["HTML/CSS", "Javascript"],
+						description: "人生で初めて開発したWebサイトです。¥nプログラミングを好きになったきっかけでもあります。¥nシンプルなスクロール型シューティングゲームです。"
+					}}
 				/>
 			</div>
 		</div>

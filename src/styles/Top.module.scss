@@ -75,9 +75,8 @@ $title-margin-left: 140px;
   }
   .scroll {
     position: absolute;
-    top: 520px;
-    left: $title-margin-left;
-    width: $titile-width;
+    top: 750px;
+    right: 50%;
     @media (max-width: 1000px) {
       top: 360px;
       right: 50%;
