@@ -1,5 +1,5 @@
-$card-width: 370px;
-$card-height: 540px;
+$card-width: 325px;
+$card-height: 495px;
 
 .container {
 	display: inline-block;
@@ -19,7 +19,7 @@ $card-height: 540px;
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 190px;
+		height: 171px;
 		vertical-align: top;
 		.cardImage {
 			width: 100% !important;
@@ -28,37 +28,37 @@ $card-height: 540px;
 	}
 	.overviewContainer {
 		position: absolute;
-		top: 218px;
+		top: 195px;
 		left: 28px;
 		color: var(--foreground);
 		font-family: var(--font-noto-sans-jp);
 		.title{
-			font-size: 22px;
+			font-size: 20px;
 			font-weight: 700;
 		}
 		.platform {
 			margin-top: 8px;
-			font-size: 13px;
+			font-size: 12px;
 			font-weight: 300;
 		}
 		.serviceFrame {
-			margin: 10px 0;
+			margin: 9px 0;
 			width: 95%;
 			.serviceElement {
 				display: inline-block;
-				height: 24px;
-				line-height: 12px;
-				padding: 6px 13px;
-				margin: 4px 8px 4px 0;
-				border-radius: 12px;
+				height: 22px;
+				line-height: 11px;
+				padding: 5px 12px;
+				margin: 3.5px 7px 3.5px 0;
+				border-radius: 11px;
 				background-color: gray;
-				font-size: 12px;
+				font-size: 10px;
 				color: var(--font-color-reverse);
 			}
 		}
 		.description {
 			width: 92%;
-			font-size: 16px;
+			font-size: 14px;
 			line-height: 26px;
 			margin-top: 14px;
 			color: var(--font-color);
@@ -66,7 +66,7 @@ $card-height: 540px;
 		.github {
 			display: inline-block;
 			margin-top: 5px;
-			font-size: 34px;
+			font-size: 31px;
 		}
 	}
 }

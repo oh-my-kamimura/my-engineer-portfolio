@@ -1,8 +1,11 @@
+$titile-width: 397px;
+$titile-height: 100px;
+
 .container{
-  margin: 70px 0 0 0;
-  scroll-margin-top: 70px;
+  margin: 0;
+  // scroll-margin-top: 70px;
   position: relative;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.7);
   width: auto;
   height: auto;
   .titleName {
@@ -10,12 +13,12 @@
     background-color: var(--foreground);
     top: 177px;
     right: 55%;
-    width: 430px;
-    height: 110px;
+    width: $titile-width;
+    height: $titile-height;
+    line-height: $titile-height;
     color: var(--font-color-reverse);
-    line-height: 110px;
     text-align: center;
-    font-size: 39px;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 5%;
     transform: translateX(-100%);
@@ -32,13 +35,13 @@
   }
   .titleSite {
     position: absolute;
-    top: 310px;
+    top: 300px;
     right: 55%;
-    width: 430px;
-    height: 110px;
+    width: $titile-width;
+    height: $titile-height;
     color: var(--foreground); // or --font-color
     text-align: center;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 600;
     letter-spacing: 0%;
     transform: translateX(-100%);
@@ -65,9 +68,9 @@
   }
   .scroll {
     position: absolute;
-    top: 530px;
+    top: 520px;
     right: 55%;
-    width: 430px;
+    width: $titile-width;
     @media (max-width: 1000px) {
       top: 360px;
       right: 50%;
