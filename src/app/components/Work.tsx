@@ -22,19 +22,19 @@ export default function Work() {
 					githubUrl="https://github.com/oh-my-kamimura/learn-by-typing/tree/master"
 				/>
 				<WorkCard
+					imageSrc="induction-course-quiz.png"
+					title="研修生向けクイズサイト"
+					platform="Webアプリケーション"
+					usedService={["HTML/CSS", "Java", "Spring", "MySQL", "Figma"]}
+					description="新入社員研修中に開発したアプリケーションです。研修で学んだ内容をクイズ形式で振り返り、知識定着を促進するアプリケーションを開発し、社内で公開しました。"
+				/>
+				<WorkCard
 					imageSrc="schedule-matching-app.png"
 					title="日程調整アプリ「ラク調」"
 					platform="モバイルアプリ（iPhone × android）【開発中】"
 					usedService={["Typescript", "ReactNative", "Firebase", "Figma"]}
 					description="友人との日程調整をストレスフリーにする¥nモバイルアプリを開発しました。¥n友人同士の遊びの掲示板や、カレンダーに¥n基づいた回答機能などを備えています。"
 					githubUrl="https://github.com/oh-my-kamimura/schedule-matching-app"
-				/>
-				<WorkCard
-					imageSrc="induction-course-quiz.png"
-					title="研修生向けクイズサイト"
-					platform="Webアプリケーション"
-					usedService={["HTML/CSS", "Java", "Spring", "MySQL", "Figma"]}
-					description="新入社員研修中に開発したアプリケーションです。研修で学んだ内容をクイズ形式で振り返り、知識定着を促進するアプリケーションを開発し、社内で公開しました。"
 				/>
 			</div>
 			<div className={styles.cardContainer}>
