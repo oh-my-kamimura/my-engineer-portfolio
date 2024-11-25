@@ -58,7 +58,7 @@ export default function Work() {
 					title="シューティングゲーム"
 					platform="Webサイト"
 					usedService={["HTML/CSS", "Javascript"]}
-					description="人生で初めて開発したWebサイトで、¥nプログラミングを好きになったきっかけでもあります。¥nシンプルなスクロール型シューティングゲームです。"
+					description="人生で初めて開発したWebサイトです。¥nプログラミングを好きになったきっかけでもあります。¥nシンプルなスクロール型シューティングゲームです。"
 				/>
 			</div>
 		</div>
