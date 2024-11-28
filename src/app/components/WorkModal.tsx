@@ -25,25 +25,40 @@ export default function Modal(props: {isOpen: boolean, onClose: () => void, cont
 					<table>
 						<tbody>
 							<tr>
-								<td className={styles.firstColumn}>Data</td>
-								<td className={styles.secondColumn}>2023/05〜現在</td>
+								<td className={styles.firstColumn}>Date</td>
+								<td className={styles.secondColumn}>
+									{props.content.date}
+								</td>
 							</tr>
 							<tr>
 								<td className={styles.firstColumn}>Team</td>
-								<td className={styles.secondColumn}>1人</td>
+								<td className={styles.secondColumn}>
+									{props.content.team}
+								</td>
 							</tr>
 							<tr>
 								<td className={styles.firstColumn}>Role</td>
-								<td className={styles.secondColumn}>ALL</td>
-							</tr>
-							<tr>
-								<td className={styles.firstColumn}>URL</td>
 								<td className={styles.secondColumn}>
-									<a href="https://www.learn-by-typing.com" target="_blank">
-										https://www.learn-by-typing.com
-									</a>
+									{props.content.role.split("¥n").map((line, index) => (
+										<React.Fragment key={index}>
+											{line}
+											<br />
+										</React.Fragment>
+									))}
 								</td>
 							</tr>
+							{props.content.serviceUrl ? (
+								<tr>
+									<td className={styles.firstColumn}>URL</td>
+									<td className={styles.secondColumn}>
+										<a href={props.content.serviceUrl} target="_blank">
+											{props.content.serviceUrl}
+										</a>
+									</td>
+								</tr>
+							) : (
+								<></>
+							)}
 						</tbody>
 					</table>
 					<div className={styles.divideLine}/>

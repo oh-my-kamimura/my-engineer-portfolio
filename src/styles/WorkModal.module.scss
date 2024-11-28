@@ -31,18 +31,18 @@
 			border-bottom: 2px solid var(--foreground);
 			.platform {
 				display: inline-block;
-				padding: 0 20px;
-				height: 45px;
-				line-height: 45px;
+				padding: 0 15px;
+				margin: 0 100px 15px 0;
+				height: 38px;
+				line-height: 38px;
 				text-align: center;
-				font-size: 19px;
+				font-size: 16px;
 				font-weight: 700;
 				background-color: var(--foreground);
 				color: var(--font-color-reverse);
-				margin-bottom: 20px;
 			}
 			.title {
-				margin: 2px 0 7px;
+				margin: 2px 0 14px;
 				padding: 0;
 			}
 			.divideLine {
@@ -52,6 +52,7 @@
 				opacity: 0.4;
 			}
 			td {
+				vertical-align: top;
 				padding: 2px;
 			}
 			.firstColumn {

@@ -5,5 +5,9 @@ export type WorkType = {
     platform: string;
     usedService: string[];
     description: string;
-    githubUrl?: string; // オプショナルなプロパティ
+    githubUrl?: string;
+	date: string;
+	team: string;
+	role: string;
+	serviceUrl?: string;
 };
