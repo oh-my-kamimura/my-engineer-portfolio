@@ -12,8 +12,10 @@
 	.modalContent {
 		position: relative;
 		background-color: white;
-		width: 90%;
-		height: 90%;
+		width: 90vw;
+		height: 90vh;
+		max-width: 1300px;
+		max-height: 700px;
 		border-radius: 8px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 		font-family: var(--font-noto-sans-jp);
