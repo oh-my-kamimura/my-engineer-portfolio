@@ -1,22 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import styles from "../../styles/WorkModal.module.scss";
 import { WorkType } from "../types/work";
 import serviceColorMap from "../types/colorMap";
 
 
-export default function Modal(props: {isOpen: boolean, onClose: () => void, content: WorkType }) {
-	const [currentImageIndex, setCurrentImageIndex] = useState(0);
-	
-	if (!props.isOpen) return null;
+export default function Modal(props: { isOpen: boolean, onClose: () => void, content: WorkType }) {
 
-    const handleThumbnailClick = (index: number) => {
-        setCurrentImageIndex(index);
-    };
+	const settings = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	};
+
+	if (!props.isOpen) return null;
 
 	return (
 		<div className={styles.modalOverlay} onClick={props.onClose}>
@@ -105,28 +113,18 @@ export default function Modal(props: {isOpen: boolean, onClose: () => void, cont
 					)}
 				</div>
 				<div className={styles.rightContainer}>
-					<div className={styles.headerImage}>
-						<Image
-							className={styles.image}
-							src={`/work/${props.content.id}/${currentImageIndex + 1}.png`}
-							alt="トップ画像"
-							width={1000}
-							height={1000}
-						/>
-					</div>
-					<div className={styles.thumbnailContainer}>
+					<Slider {...settings} className={styles.headerImage}>
 						{Array.from({ length: props.content.imageCount }, (_, index) => (
 							<Image
 								key={index}
-								className={styles.thumbnail}
 								src={`/work/${props.content.id}/${index + 1}.png`}
+								className={styles.image}
 								alt={`サムネイル${index}`}
-								onClick={() => handleThumbnailClick(index)}
-								width={500}
-								height={500}
+								width={1000}
+								height={1000}
 							/>
 						))}
-					</div>
+					</Slider>
 				</div>
 			</div>
 		</div>
