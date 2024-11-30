@@ -16,7 +16,6 @@ export default function Work() {
 				<WorkCard
 					work={{
 						id: "learn-by-typing",
-						imageSrc: "learn-by-typing.png",
 						title: "資格勉強×タイピング",
 						platform: "Webアプリケーション",
 						usedService: ["Typescript", "Angular", "HTML/CSS", "Java", "Spring", "MySQL", "AWS", "Figma"],
@@ -25,13 +24,13 @@ export default function Work() {
 						date: "2023/05〜現在",
 						team: "1人",
 						role: "ALL",
-						serviceUrl: "https://www.learn-by-typing.com"
+						serviceUrl: "https://www.learn-by-typing.com",
+						imageCount: 5,
 					}}
 				/>
 				<WorkCard
 					work={{
 						id: "induction-course-quiz",
-						imageSrc: "induction-course-quiz.png",
 						title: "研修生向けクイズサイト",
 						platform: "Webアプリケーション",
 						usedService: ["HTML/CSS", "Java", "Spring", "MySQL", "Figma"],
@@ -39,12 +38,12 @@ export default function Work() {
 						date: "2022/6〜2022/7",
 						team: "3人",
 						role: "1. UI全般¥n2. クイズ機能、ランキング機能開発¥n3. デプロイ¥n4. スケジュール管理",
+						imageCount: 0,
 					}}
 				/>
 				<WorkCard
 					work={{
 						id: "schedule-matching-app",
-						imageSrc: "schedule-matching-app.png",
 						title: "日程調整アプリ「ラク調」",
 						platform: "モバイルアプリ【開発中】",
 						usedService: ["Typescript", "ReactNative", "Firebase", "Figma"],
@@ -53,6 +52,7 @@ export default function Work() {
 						date: "2024/6〜現在",
 						team: "2人",
 						role: "1. UI全般¥n2. ログイン、フレンド管理機能開発¥n3. イベント登録、調整機能開発¥n4. スケジュール管理",
+						imageCount: 0,
 					}}
 				/>
 			</div>
@@ -60,7 +60,6 @@ export default function Work() {
 				<WorkCard
 					work={{
 						id: "my-engineer-portfolio",
-						imageSrc: "my-engineer-portfolio.png",
 						title: "ポートフォリオサイト",
 						platform: "Webサイト",
 						usedService: ["Typescript", "Next.js", "HTML/CSS", "Figma"],
@@ -69,13 +68,13 @@ export default function Work() {
 						date: "2024/11〜現在",
 						team: "1人",
 						role: "ALL",
-						serviceUrl: "https://oh-my-kamimura-portfolio.vercel.app"
+						serviceUrl: "https://oh-my-kamimura-portfolio.vercel.app",
+						imageCount: 0,
 					}}
 				/>
 				<WorkCard
 					work={{
 						id: "baseball-game",
-						imageSrc: "baseball-game.png",
 						title: "野球版ゲーム",
 						platform: "Unityアプリケーション",
 						usedService: ["C#", "Unity"],
@@ -83,12 +82,12 @@ export default function Work() {
 						date: "2021/7〜2021/8",
 						team: "1人",
 						role: "ALL",
+						imageCount: 0,
 					}}
 				/>
 				<WorkCard
 					work={{
 						id: "shooting-game",
-						imageSrc: "shooting-game.png",
 						title: "シューティングゲーム",
 						platform: "Webサイト",
 						usedService: ["HTML/CSS", "Javascript"],
@@ -96,6 +95,7 @@ export default function Work() {
 						date: "2020/11〜2020/12",
 						team: "1人",
 						role: "ALL",
+						imageCount: 0,
 					}}
 				/>
 			</div>

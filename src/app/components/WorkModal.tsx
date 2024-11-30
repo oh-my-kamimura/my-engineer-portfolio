@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 import styles from "../../styles/WorkModal.module.scss";
 import { WorkType } from "../types/work";
@@ -9,7 +10,13 @@ import serviceColorMap from "../types/colorMap";
 
 
 export default function Modal(props: {isOpen: boolean, onClose: () => void, content: WorkType }) {
+	const [currentImageIndex, setCurrentImageIndex] = useState(0);
+	
 	if (!props.isOpen) return null;
+
+    const handleThumbnailClick = (index: number) => {
+        setCurrentImageIndex(index);
+    };
 
 	return (
 		<div className={styles.modalOverlay} onClick={props.onClose}>
@@ -96,6 +103,30 @@ export default function Modal(props: {isOpen: boolean, onClose: () => void, cont
 					) : (
 						<></>
 					)}
+				</div>
+				<div className={styles.rightContainer}>
+					<div className={styles.headerImage}>
+						<Image
+							className={styles.image}
+							src={`/work/${props.content.id}/${currentImageIndex + 1}.png`}
+							alt="トップ画像"
+							width={1000}
+							height={1000}
+						/>
+					</div>
+					<div className={styles.thumbnailContainer}>
+						{Array.from({ length: props.content.imageCount }, (_, index) => (
+							<Image
+								key={index}
+								className={styles.thumbnail}
+								src={`/work/${props.content.id}/${index + 1}.png`}
+								alt={`サムネイル${index}`}
+								onClick={() => handleThumbnailClick(index)}
+								width={500}
+								height={500}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>

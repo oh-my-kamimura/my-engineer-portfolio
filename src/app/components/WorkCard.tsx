@@ -23,7 +23,7 @@ export default function WorkCard(props: {work: WorkType}) {
 				<div className={styles.cardImageFrame}>
 					<Image
 						className={styles.cardImage}
-						src={`/work-card/${props.work.imageSrc}`}
+						src={`/work-card/${props.work.id}.png`}
 						alt="トップ画像"
 						fill
 					/>

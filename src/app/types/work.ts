@@ -1,6 +1,5 @@
 export type WorkType = {
     id: string;
-    imageSrc: string;
     title: string;
     platform: string;
     usedService: string[];
@@ -10,4 +9,5 @@ export type WorkType = {
 	team: string;
 	role: string;
 	serviceUrl?: string;
+	imageCount: number;
 };
