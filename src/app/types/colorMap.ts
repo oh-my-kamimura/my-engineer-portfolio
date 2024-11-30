@@ -14,6 +14,7 @@ const serviceColorMap: ColorMap = {
 	"Next.js": ["#444444", "white"],
 	"C#": ["#68217A", "white"],
 	"Unity": ["#444444", "white"],
+	Postgres: ["#336791", "white"],
 };
 
 export default serviceColorMap;

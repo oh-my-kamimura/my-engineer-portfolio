@@ -33,7 +33,7 @@ export default function Work() {
 						id: "induction-course-quiz",
 						title: "研修生向けクイズサイト",
 						platform: "Webアプリケーション",
-						usedService: ["HTML/CSS", "Java", "Spring", "MySQL", "Figma"],
+						usedService: ["HTML/CSS", "Java", "Spring", "Postgres", "Figma"],
 						description: "新入社員研修中に、有志を募って開発したWebアプリです。研修で学んだ内容をクイズ形式で振り返り、知識定着を促進するアプリです。社内で公開しました。",
 						date: "2022/6〜2022/7",
 						team: "3人",
