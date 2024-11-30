@@ -22,6 +22,7 @@ export default function Modal(props: { isOpen: boolean, onClose: () => void, con
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 2000,
+		arrows: true,
 	};
 
 	if (!props.isOpen) return null;
@@ -115,14 +116,25 @@ export default function Modal(props: { isOpen: boolean, onClose: () => void, con
 				<div className={styles.rightContainer}>
 					<Slider {...settings} className={styles.headerImage}>
 						{Array.from({ length: props.content.imageCount }, (_, index) => (
-							<Image
-								key={index}
-								src={`/work/${props.content.id}/${index + 1}.png`}
-								className={styles.image}
-								alt={`サムネイル${index}`}
-								width={1000}
-								height={1000}
-							/>
+								index === 0 && props.content.topContentType === "gif" ? (
+									<Image
+										key={index}
+										src={`/work/${props.content.id}/${index + 1}.gif`}
+										className={styles.image}
+										alt={`サムネイル${index}`}
+										width={1000}
+										height={1000}
+									/>
+								) : (
+									<Image
+										key={index}
+										src={`/work/${props.content.id}/${index + 1}.png`}
+										className={styles.image}
+										alt={`サムネイル${index}`}
+										width={1000}
+										height={1000}
+									/>
+								)
 						))}
 					</Slider>
 				</div>
