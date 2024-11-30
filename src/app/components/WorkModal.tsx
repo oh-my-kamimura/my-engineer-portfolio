@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 
 import styles from "../../styles/WorkModal.module.scss";
 import { WorkType } from "../types/work";
@@ -52,7 +53,7 @@ export default function Modal(props: {isOpen: boolean, onClose: () => void, cont
 									<td className={styles.firstColumn}>URL</td>
 									<td className={styles.secondColumn}>
 										<a href={props.content.serviceUrl} target="_blank">
-											{props.content.serviceUrl}
+											{props.content.serviceUrl} <FontAwesomeIcon icon={faLink} />
 										</a>
 									</td>
 								</tr>
