@@ -67,6 +67,12 @@ export default function WorkCard(props: {work: WorkType}) {
 					) : (
 						<></>
 					)}
+
+					{props.work.serviceUrl ? (
+						<div className={styles.serviceUrl}>URL公開中</div>
+					) : (
+						<></>
+					)}
 				</div>
 			</button>
 			<Modal
