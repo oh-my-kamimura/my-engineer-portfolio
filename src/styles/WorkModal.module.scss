@@ -127,3 +127,12 @@
 		cursor: pointer;
 	}
 }
+
+.dot {
+	color: gray;
+}
+.activeDot {
+	color: var(--accent-color);
+	transform: scale(1.2);
+	transition: transform 0.3s ease-in-out;
+}

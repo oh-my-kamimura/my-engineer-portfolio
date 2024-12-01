@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faLink, faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,8 +11,8 @@ import styles from "../../styles/WorkModal.module.scss";
 import { WorkType } from "../types/work";
 import serviceColorMap from "../types/colorMap";
 
-
 export default function Modal(props: { isOpen: boolean, onClose: () => void, content: WorkType }) {
+	const [currentSlide, setCurrentSlide] = useState(0);
 
 	const settings = {
 		dots: true,
@@ -20,9 +20,14 @@ export default function Modal(props: { isOpen: boolean, onClose: () => void, con
 		speed: 500,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 2000,
 		arrows: true,
+		centerMode: true,
+		beforeChange: (oldIndex: number, newIndex: number) => setCurrentSlide(newIndex),
+		customPaging: (i: number) => (
+			<div className={i === currentSlide ? styles.activeDot : styles.dot}>
+				{i === 0 && props.content.topContentType == "webm" ? <FontAwesomeIcon icon={faCirclePlay} /> : <div>⚫︎</div>}
+			</div>
+		),
 	};
 
 	if (!props.isOpen) return null;
