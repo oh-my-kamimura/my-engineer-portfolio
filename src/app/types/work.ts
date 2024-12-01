@@ -10,5 +10,5 @@ export type WorkType = {
 	role: string;
 	serviceUrl?: string;
 	imageCount: number;
-	topContentType?: "gif" | "img";
+	topContentType?: "gif" | "webm";
 };

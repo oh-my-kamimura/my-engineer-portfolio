@@ -26,6 +26,7 @@ export default function Work() {
 						role: "ALL",
 						serviceUrl: "https://www.learn-by-typing.com",
 						imageCount: 5,
+						topContentType: "webm",
 					}}
 				/>
 				<WorkCard
@@ -38,7 +39,7 @@ export default function Work() {
 						date: "2022/6〜2022/7",
 						team: "3人",
 						role: "1. UI全般¥n2. クイズ機能、ランキング機能開発¥n3. デプロイ¥n4. スケジュール管理",
-						imageCount: 0,
+						imageCount: 6,
 					}}
 				/>
 				<WorkCard

@@ -116,15 +116,14 @@ export default function Modal(props: { isOpen: boolean, onClose: () => void, con
 				<div className={styles.rightContainer}>
 					<Slider {...settings} className={styles.headerImage}>
 						{Array.from({ length: props.content.imageCount }, (_, index) => (
-								index === 0 && props.content.topContentType === "gif" ? (
-									<Image
-										key={index}
-										src={`/work/${props.content.id}/${index + 1}.gif`}
-										className={styles.image}
-										alt={`サムネイル${index}`}
-										width={1000}
-										height={1000}
-									/>
+								index === 0 && props.content.topContentType === "webm" ? (
+									<video controls width="1000" loop autoPlay muted key={index} className={styles.image}>
+										<source 
+											src={`/work/${props.content.id}/${index + 1}.webm`}
+											type="video/webm"
+										/>
+										Your browser does not support the video tag.
+									</video>
 								) : (
 									<Image
 										key={index}
