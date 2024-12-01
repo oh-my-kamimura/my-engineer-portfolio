@@ -49,7 +49,7 @@ export default function Work() {
 						title: "日程調整アプリ「ラク調」",
 						platform: "モバイルアプリ【開発中】",
 						usedService: ["Typescript", "ReactNative", "Firebase", "Figma"],
-						description: "友人との日程調整をストレスフリーにする¥nモバイルアプリを開発中です。¥nスケジュール帳に基づいた日程調整機能などを開発中です",
+						description: "友人との日程調整をストレスフリーにする¥nモバイルアプリを開発中です。¥nスケジュール帳に基づいた日程調整機能などを開発中です。",
 						githubUrl: "https://github.com/oh-my-kamimura/schedule-matching-app",
 						date: "2024/6〜現在",
 						team: "2人",
