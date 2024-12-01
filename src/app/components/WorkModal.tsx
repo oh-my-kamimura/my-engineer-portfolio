@@ -119,10 +119,17 @@ export default function Modal(props: { isOpen: boolean, onClose: () => void, con
 					)}
 				</div>
 				<div className={styles.rightContainer}>
-					<Slider {...settings} className={styles.headerImage}>
+					<Slider {...settings} className={props.content.id !== "shooting-game" ? styles.headerImage : styles.headerImageSquare}>
 						{Array.from({ length: props.content.imageCount }, (_, index) => (
 								index === 0 && props.content.topContentType === "webm" ? (
-									<video controls width="1000" loop autoPlay muted key={index} className={styles.image}>
+									<video 
+										key={index} 
+										controls 
+										width={1000} 
+										height={1000} 
+										loop autoPlay muted 
+										className={styles.image}
+									>
 										<source 
 											src={`/work/${props.content.id}/${index + 1}.webm`}
 											type="video/webm"
@@ -137,12 +144,12 @@ export default function Modal(props: { isOpen: boolean, onClose: () => void, con
 										alt={`サムネイル${index}`}
 										width={1000}
 										height={1000}
-									/>
+										/>
 								)
-						))}
+							))}
 					</Slider>
 				</div>
-			</div>
+				</div>
 		</div>
 	);
 };

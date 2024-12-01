@@ -40,6 +40,7 @@ export default function Work() {
 						team: "3人",
 						role: "1. UI全般¥n2. クイズ機能、ランキング機能開発¥n3. デプロイ¥n4. スケジュール管理",
 						imageCount: 6,
+						topContentType: "webm",
 					}}
 				/>
 				<WorkCard
@@ -70,7 +71,7 @@ export default function Work() {
 						team: "1人",
 						role: "ALL",
 						serviceUrl: "https://oh-my-kamimura-portfolio.vercel.app",
-						imageCount: 0,
+						imageCount: 2,
 					}}
 				/>
 				<WorkCard
@@ -83,7 +84,8 @@ export default function Work() {
 						date: "2021/7〜2021/8",
 						team: "1人",
 						role: "ALL",
-						imageCount: 0,
+						imageCount: 6,
+						topContentType: "webm",
 					}}
 				/>
 				<WorkCard
@@ -96,7 +98,8 @@ export default function Work() {
 						date: "2020/11〜2020/12",
 						team: "1人",
 						role: "ALL",
-						imageCount: 0,
+						imageCount: 5,
+						topContentType: "webm",
 					}}
 				/>
 			</div>
