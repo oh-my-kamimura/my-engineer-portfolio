@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Engineer Portfolio
 
-## Getting Started
+![ヘッダー画像1](/docs/img/header/1.png)
+![ヘッダー画像2](/docs/img/header/2.png)
 
-First, run the development server:
+<br />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## サービスのURL
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+https://oh-my-kamimura-portfolio.vercel.app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+※PC推奨です。
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<br />
 
-## Learn More
+## 概要
 
-To learn more about Next.js, take a look at the following resources:
+己のサイトは、自身のこれまでの成果物をまとめたポートフォリオサイトです。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 使用技術
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **フロントエンド** 
+  - Next.js 15
+  - TypeScript
+  - HTML
+  - CSS/SCSS
+- **デプロイツール** 
+  - Vercel
+- **デザインツール** 
+  - Figma
 
-## Deploy on Vercel
+<br />
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 今後の展望
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+以下のページを追記予定です。
+
+- **スキルページ**
+  - 自身の扱えるツールや技術について記載予定
+
+- **作品の追加**
+  - Webページのみではなく、組み込み機器などの開発経験も記載予定です。
