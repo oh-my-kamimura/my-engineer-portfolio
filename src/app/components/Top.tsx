@@ -6,9 +6,9 @@ export default function Top() {
 	return (
 		<div className={styles.container} id="top">
 			<div className={styles.titleContainer}>
-				<div className={styles.titleName}>
+				<h1 className={styles.titleName}>
 					YOHEI KAMIMURA
-				</div>
+				</h1>
 			</div>
 			<div className={styles.titleSite}>
 				&lt;engineer portfolio&gt;
