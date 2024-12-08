@@ -15,6 +15,7 @@ const serviceColorMap: ColorMap = {
 	"C#": ["#68217A", "white"],
 	"Unity": ["#444444", "white"],
 	Postgres: ["#336791", "white"],
+	React: ["#61DAFB", "black"],
 };
 
 export default serviceColorMap;
