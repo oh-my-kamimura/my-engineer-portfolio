@@ -9,7 +9,12 @@
   align-items: center;
   padding: 0;
   gap: 64px;
-  font-family: var(--font-jet-brains-mono);
+  font-family: var(--font-sitara);
+}
+
+.content {
+  margin-left: 250px;
+  width: auto;
 }
 
 // TODO: ダークモードの有効化

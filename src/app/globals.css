@@ -1,6 +1,7 @@
 :root {
   --background: #EFF0EF;
   --foreground: #3D664A;
+  --header-color: #E5EAE6;
   --accent-color: #D65A31;
 
   --font-color: #555555;
@@ -28,7 +29,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: --font-jet-brains-mono --font-noto-sans --font-noto-sans-jp;
+  font-family: --font-sitara --font-noto-sans --font-noto-sans-jp;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

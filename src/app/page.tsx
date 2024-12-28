@@ -9,11 +9,12 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Header/>
-      <div className={styles.top}/>
-      <Top/>
-      <AboutSite/>
-      <Work/>
-      <Contact/>
+      <div className={styles.content}>
+        <Top/>
+        <AboutSite/>
+        <Work/>
+        <Contact/>
+      </div>
     </div>
   );
 }

@@ -5,9 +5,9 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-const jetBrainsMono = localFont({
-  src: "./fonts/JetBrainsMono-VariableFont_wght.ttf",
-  variable: "--font-jet-brains-mono",
+const sitara = localFont({
+  src: "./fonts/Sitara-Regular.woff",
+  variable: "--font-sitara",
   weight: "100 900",
 });
 const notoSans = localFont({
@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetBrainsMono.variable}  ${notoSans.variable}  ${notoSansJP.variable}`}>
+      <body className={`${sitara.variable}  ${notoSans.variable}  ${notoSansJP.variable}`}>
         {children}
       </body>
     </html>
