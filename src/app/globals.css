@@ -6,6 +6,9 @@
 
   --font-color: #555555;
   --font-color-reverse: #EFF0EF;
+
+  --container-max-width: 1100px;
+  --header-width: 200px;
 }
 
 /* TODO: ダークモードの有効化

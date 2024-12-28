@@ -15,10 +15,10 @@
     line-height: 36px;
   }
   .cardContainer {
-    max-width: 1200px;
-    margin: 0 auto 60px;
+    max-width: var(--container-max-width);
+    margin: 0 auto 40px;
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
   }
 }

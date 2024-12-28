@@ -10,7 +10,7 @@ $title-margin-left: 140px;
   height: 100vh;
   .titleContainer{
     margin: 0px auto;
-    width: 900px;
+    width: var(--container-max-width);
     .titleSite {
       color: var(--foreground);
       text-align: left;
@@ -55,7 +55,7 @@ $title-margin-left: 140px;
   .mainImage {
     object-fit: cover;
     position: relative !important;
-    width: 900px !important;
+    width: var(--container-max-width) !important;
     max-height: 70vh !important;
     opacity: 0.3;
   }
