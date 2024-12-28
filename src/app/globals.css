@@ -1,5 +1,5 @@
 :root {
-  --background: #EFF0EF;
+  --background: #F1F2F1;
   --foreground: #3D664A;
   --header-color: #E5EAE6;
   --accent-color: #D65A31;
@@ -29,7 +29,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: --font-sitara --font-noto-sans --font-noto-sans-jp;
+  font-family: --font-sitara --font-stardos-stencil --font-noto-sans --font-noto-sans-jp;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

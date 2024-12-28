@@ -5,65 +5,32 @@ $title-margin-left: 140px;
 .container{
   margin: 0;
   position: relative;
-  background-color: rgba(255,255,255,0.6);
-  width: auto;
-  height: auto;
+  background-color: white;
+  padding-top: 50px;
+  height: 100vh;
   .titleContainer{
-    position: absolute;
-    background-color: var(--foreground);
-    top: 177px;
-    left: 0;
-    width: 540px;
-    height: $titile-height;
-    @media (max-width: 1000px) {
-      width: 50vw;
-      height: 80px;
+    margin: 0px auto;
+    width: 900px;
+    .titleSite {
+      color: var(--foreground);
+      text-align: left;
+      font-size: 18px;
+      font-weight: 400;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease;
+      animation: fadeInLeft 1s ease-in-out forwards;
     }
     .titleName {
-      position: absolute;
-      top: 0;
-      left: $title-margin-left;
-      width: $titile-width;
-      height: $titile-height;
-      line-height: $titile-height;
-      color: var(--font-color-reverse);
-      text-align: center;
+      color: var(--foreground);
+      margin-bottom: 20px;
+      text-align: left;
+      font-family: var(--font-stardos-stencil);
       font-size: 35px;
       font-weight: 700;
       letter-spacing: 5%;
       transform: translateX(-100%);
       transition: transform 0.5s ease;
       animation: fadeInLeft 1s ease-in-out forwards;
-      @media (max-width: 1000px) {
-        left: 10vw;
-        width: 300px;
-        height: 80px;
-        line-height: 80px;
-        font-size: 24px;
-      }
-    }
-  }
-  .titleSite {
-    position: absolute;
-    top: 300px;
-    left: $title-margin-left;
-    width: $titile-width;
-    height: $titile-height;
-    color: var(--foreground); // or --font-color
-    text-align: center;
-    font-size: 26px;
-    font-weight: 600;
-    letter-spacing: 0%;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease;
-    animation: fadeInLeft 1s ease-in-out forwards;
-    @media (max-width: 1000px) {
-      top: 250px;
-      left: 10vw;
-      width: 300px;
-      height: 80px;
-      line-height: 80px;
-      font-size: 20px;
     }
   }
   @keyframes fadeInLeft {
@@ -78,7 +45,7 @@ $title-margin-left: 140px;
   }
   .scroll {
     position: absolute;
-    top: 90vh;
+    top: 96vh;
     right: 50%;
     @media (max-width: 1000px) {
       top: 90%;
@@ -86,9 +53,10 @@ $title-margin-left: 140px;
     }
   }
   .mainImage {
-    z-index: -10;
-    object-fit: contain;
+    object-fit: cover;
     position: relative !important;
-    width: 100% !important;
+    width: 900px !important;
+    max-height: 70vh !important;
+    opacity: 0.3;
   }
 }

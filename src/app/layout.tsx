@@ -10,6 +10,11 @@ const sitara = localFont({
   variable: "--font-sitara",
   weight: "100 900",
 });
+const stardosStencil = localFont({
+  src: "./fonts/StardosStencil-Regular.ttf",
+  variable: "--font-stardos-stencil",
+  weight: "100 900",
+});
 const notoSans = localFont({
   src: "./fonts/NotoSans-VariableFont_wdth,wght.ttf",
   variable: "--font-noto-sans",
@@ -33,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${sitara.variable}  ${notoSans.variable}  ${notoSansJP.variable}`}>
+      <body className={`${sitara.variable} ${stardosStencil.variable} ${notoSans.variable}  ${notoSansJP.variable}`}>
         {children}
       </body>
     </html>
